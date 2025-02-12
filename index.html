@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Nao">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nao</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <main>
+        <header>
+           <h1>Űrlap</h1> 
+        </header>
+        <article>
+            <form action="feldolgoz.php" method="get">
+                 <fieldset>
+                    <legend>Profiladatok</legend>
+                 <div class="profadat">
+                    <label for="nev">Név</label>
+                    <input type="text" name="nev" id="nev" placeholder="Kiss Bence..">
+                 </div>
+                 <div class="profadat">
+                    <label for="profkep">Profilkép</label>
+                    <input type="file" id="profkep">
+                    <input type="submit" value="Feltöltés">
+                 </div>
+                 <div class="profadat">
+                    <label for="szuldatum">Születési dátum</label>
+                    <input type="date" name="szuldatum" id="szuldatum" placeholder="éééé. hh. nn.">
+                 </div>
+                 <div class="profadat">
+                    <label for="lakcim">Lakcím</label>
+                    <input type="text" name="lakcim" id="lakcim" placeholder="1234 Budapest, Petőfi utca 10">
+                 </div>
+                 <div class="profadat radio">
+                    <label for="ferfi">Férfi</label>
+                    <input type="radio" id="ferfi" name="nem" value="Férfi">
+                    <label for="no">Nő</label>
+                    <input type="radio" id="no" name="nem" value="Nő">
+                    <label for="mas">Más</label>
+                    <input type="radio" id="mas" name="nem" value="Más">
+                 </div>
+                 <div class="profadat">
+                    <label for="tesok">Testvérek száma:</label>
+                    <input type="number" id="tesok" name="tesok" min="0" max="12">
+                    <input type="submit" value="Küld">
+                </div>
+                <div class="profadat">
+                    <label for="hobbi">Hobbi</label>
+                    <input type="text" name="hobbi" id="hobbi" placeholder="Hobbid..">
+                 </div>
+                </fieldset>
+            </form>
+        </article>
+        <footer>
+            Footer
+        </footer>
+    </main>
+</body>
+</html>

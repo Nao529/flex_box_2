@@ -1,0 +1,59 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(13, 85, 85), rgb(7, 215, 215));
+}
+header {
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px solid black;
+    height: 100px;
+    font-size: 15px;
+    color: rgb(225, 255, 255);
+    text-align: center;
+    background-color: rgb(6, 80, 80);
+}
+
+.profadat {
+    padding: 10px;
+}
+
+/*
+form .profadat {
+    display: flex;
+}
+form .profadat label {
+    flex: 0 0 200px;
+    text-align: right;
+    padding: 5px;
+}
+form .profadat input {
+    flex: 0 0 400px;
+    margin: 5px;
+    padding: 5px;
+
+}
+form fieldset {
+    padding: 10px;
+    background-color: rgb(160, 226, 226);
+}
+form .profadat label, form .radio {
+    text-align: right;
+    padding-right: 8px;
+}
+*/
+
+@media screen and (max-width: 600px){
+    form .profadat {
+        display: block;
+    }
+    form .profadat label {
+        display: block;
+        text-align: left;
+        padding-top: 25px;
+    }
+}
